@@ -1,7 +1,7 @@
 import { IconHexagonLetterC, IconHexagonLetterT } from "@tabler/icons-react";
 import SideBar from "./SideBar";
 
-const links = ["About", "Work", "Experience", "Skills", "Contact"];
+const links = ["About", "Work", "Skills", "Experience", "Contact"];
 const navLinks = (col: Boolean) => {
   return links.map((link, index) => {
     return (

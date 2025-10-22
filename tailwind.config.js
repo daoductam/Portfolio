@@ -2,27 +2,41 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    extend: {
+      colors: {
+        bgColor: "#112240",
+        primaryColor: "#64FFDA",
+        textColor: "#8892B0",
+      },
+      animation: {
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
+      },
+      keyframes: {
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
+      },
+    },
     screens: {
+      xsm: "350px",
       xs: "476px",
       sm: "640px",
       md: "768px",
+      bs: "900px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
-      // Các breakpoint 'max' cũng được định nghĩa ở đây
+
       "2xl-mx": { max: "1535px" },
       "xl-mx": { max: "1279px" },
       "lg-mx": { max: "1023px" },
+      "bs-mx": { max: "899px" },
       "md-mx": { max: "767px" },
       "sm-mx": { max: "639px" },
       "xs-mx": { max: "475px" },
-    },
-    extend: {
-      colors: {
-        bgColor: "#112240", // Tên màu bạn muốn dùng cho background
-        primaryColor: "#64FFDA", // Tên màu chính (ví dụ: cho text, border, icon)
-        textColor: "#8892B0", // Tên màu cho văn bản
-      },
+      "xsm-mx": { max: "349px" },
     },
   },
   plugins: [],
