@@ -9,7 +9,7 @@ import Mail from "./Mail";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Social from "./Social";
-// import { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -26,7 +26,7 @@ const HomePage = () => {
     >
       {loading !== true ? (
         <>
-          {/* <Toaster /> */}
+          <Toaster />
           <Header />
           <About />
           <Projects />

@@ -16,106 +16,137 @@ const Info = {
 
 const ProjectInfo = [
   {
-    title: "Website Thương mại điện tử",
-    desc: "Một trang web e-commerce được xây dựng bằng React và Node.js. Các tính năng bao gồm giỏ hàng, xác thực người dùng và cổng thanh toán (giả lập).",
-    image: "/images/project-ecommerce.png", // Đường dẫn tới ảnh của bạn
-    live: "https://ten-mien-demo-cua-ban.com", // Link demo trực tiếp
-    technologies: ["React", "Node.js", "Express", "MongoDB", "CSS"],
-    link: "", // Có thể để trống hoặc link tới bài viết mô tả chi tiết dự án
-    github: "https://github.com/ten-nguoi-dung/repo-ecommerce",
+    title: "Hệ thống Quản lý Bệnh viện (HMS - Microservices)",
+    desc: "Xây dựng hệ thống quản lý bệnh viện đa người dùng (Admin, Bác sĩ, Bệnh nhân) theo kiến trúc microservices. Backend bao gồm các service riêng biệt cho User, Profile, Appointment, Pharmacy, Media, được quản lý bởi Eureka Server và API Gateway. Frontend React cung cấp giao diện dashboard và chức năng tương ứng cho từng vai trò.",
+    image: "/image/MS.png", // Thay bằng đường dẫn ảnh của bạn
+    live: "", // Thêm link demo (nếu có)
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Cloud (Eureka, Gateway)",
+      "Spring Security",
+      "JWT",
+      "Spring Data JPA",
+      "MySQL",
+      "Feign Client",
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "Axios",
+      "Mantine UI",
+      "Tailwind CSS",
+    ],
+    link: "", // Thêm link demo
+    github: "https://github.com/daoductam/hms-backend", // Link repo backend HMS
   },
   {
-    title: "Trang quản lý (Dashboard) Phân tích Dữ liệu",
-    desc: "Một dashboard tương tác để trực quan hóa dữ liệu bán hàng. Sử dụng Python (Flask) cho backend và Chart.js để vẽ biểu đồ ở frontend.",
-    image: "/images/project-dashboard.jpg",
-    live: "https://ten-mien-demo-dashboard.com",
-    technologies: ["Python", "Flask", "Pandas", "Chart.js", "HTML"],
-    link: "",
-    github: "https://github.com/ten-nguoi-dung/repo-dashboard",
-  },
-  {
-    title: "Ứng dụng Ghi chú (Note App)",
-    desc: "Một ứng dụng ghi chú đơn giản (PWA - Progressive Web App) sử dụng JavaScript thuần và LocalStorage để lưu trữ dữ liệu trực tiếp trên trình duyệt.",
-    image: "/images/project-note-app.png",
-    live: "https://ten-mien-demo-note-app.com",
-    technologies: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
-    link: "",
-    github: "https://github.com/ten-nguoi-dung/repo-note-app",
-  },
-  {
-    title: "", // Thêm dự án của bạn ở đây
-    desc: "",
-    image: "",
+    title: "Ứng dụng Chat Real-time",
+    desc: "Xây dựng ứng dụng chat full-stack (Java Spring Boot + React) hỗ trợ chat chung (public) và chat riêng tư (1-1) qua WebSocket. Tích hợp xác thực JWT, quản lý trạng thái online của người dùng và lưu trữ lịch sử tin nhắn.tend)",
+    image: "/image/chat.png", // Thay bằng đường dẫn ảnh của bạn
     live: "",
-    technologies: [""],
-    link: "",
-    github: "",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "WebSocket",
+      "STOMP",
+      "Spring Data JPA",
+      "MySQL",
+      "React",
+      "React Hooks",
+      "React Router",
+      "Axios",
+      "StompJS",
+      "SockJS",
+      "Docker",
+    ],
+    link: "https://chat-app-4-uji1.onrender.com",
+    github: "https://github.com/daoductam/chat-app",
   },
+  {
+    title: "Hệ thống Bán vé Tàu hỏa (Desktop App)",
+    desc: "Ứng dụng desktop (Java Swing) quản lý hệ thống bán vé tàu Metro. Cho phép quản lý người dùng, hành khách, vé tàu, tuyến đường (lines) và nhà ga (stations). Kết nối cơ sở dữ liệu MySQL bằng JDBC.",
+    image: "/image/ticket-train.png", // Thay bằng đường dẫn ảnh của bạn
+    live: "", // Để trống vì là ứng dụng desktop
+    technologies: [
+      "Java",
+      "Swing", // Thư viện UI Desktop
+      "JDBC", // Kết nối DB
+      "MySQL",
+    ],
+    link: "", // Để trống
+    github: "https://github.com/daoductam/ticket-train-system", // Lấy từ tên repo
+  },
+
   // ... các dự án khác
 ];
 
 const SkillInfo = [
   {
-    title: "Frontend",
-    skills: ["HTML", "CSS", "Javascript", "React JS", "Tailwind CSS"],
+    title: "Programming Languages",
+    skills: ["Java", "Python", "TypeScript", "Javascript"],
   },
   {
-    title: "Backend",
-    skills: ["Springboot", "MySQL", "MongoDB", "PostgresSQL"],
+    title: "Frameworks & Libraries",
+    skills: [
+      "Spring Boot",
+      "Spring Cloud",
+      "Spring Security",
+      "React",
+      "Redux Toolkit",
+    ],
   },
   {
-    title: "Languages",
-    skills: ["Java", "Python", "Javascript", "Typescript", "C++"],
+    title: "Databases",
+    skills: ["MySQL", "PostgreSQL"],
   },
   {
-    title: "Tool",
-    skills: ["Git", "Github", "VS Code", "Postman", "IntelliJ"],
+    title: "Tools & Platforms",
+    skills: ["Git", "Docker", "Linux", "Jira"],
+  },
+  {
+    title: "Others",
+    skills: ["Kafka", "Redis", "RESTFUL API", "OOP"],
   },
 ];
-
 const socialLinks = [
-  { link: "https://github.com/Code-Mars", icon: IconBrandGithub },
+  { link: "https://github.com/daoductam", icon: IconBrandGithub },
   {
-    link: "https://www.linkedin.com/in/chandrabhan-maurya",
+    link: "https://www.linkedin.com/in/t%C3%A2m-%C4%91%E1%BB%A9c-%C4%91%C3%A0o-084a5431b/",
     icon: IconBrandLinkedin,
   },
-  { link: "https://www.instagram.com/code.marshal_", icon: IconBrandInstagram },
   {
-    link: "https://www.youtube.com/channel/UC1ki6jaFvFiH_E79b9FYptw",
+    link: "https://www.youtube.com/@HocCungTam",
     icon: IconBrandYoutube,
   },
-  { link: "https://www.leetcode.com/u/CodeMars", icon: IconBrandLeetcode },
+  { link: "https://leetcode.com/u/Vibfm91sXV/", icon: IconBrandLeetcode },
 ];
 
 const ExperienceInfo = [
   {
-    role: "Specialist Programmer",
-    company: "Infosys",
-    date: "Oct 2023 - Present",
-    desc: "I led software development with Spring Boot, React, and Angular, creating scalable microservices and interfaces. I optimized performance by integrating frontend and backend, and enhanced security with RESTful APIs. Collaborating in agile teams, I fostered innovation and efficiency for top-quality solutions.",
-    skills: [
-      "Springboot",
-      "React JS",
-      "Angular",
-      "Node JS",
-      "MySQL",
-      "MongoDB",
-      "Microservices",
-    ],
-  },
-  {
-    role: "System Engineer",
-    company: "Infosys",
-    date: "Nov 2022 - Sep 2023",
-    desc: " I leveraged my skills in Java, Selenium, automation testing, and MySQL to design and implement automated testing frameworks, ensuring robust software validation. I optimized database performance and reliability, and collaborated with cross-functional teams to enhance system operations and ensure seamless integration.",
+    role: "Freelancer", // Cập nhật vai trò
+    company: "Team Project - Loyalty Program", // Cập nhật để phản ánh là dự án nhóm/freelance
+    date: "6/2025 - 9/2025", // Bạn cần điền khoảng thời gian cụ thể (ví dụ: "Jun 2024 - Jul 2024")
+    desc: "Tham gia phát triển hệ thống quản lý khách hàng thân thiết (Loyalty Program) với vai trò Freelancer trong team. Hệ thống bao gồm đăng ký/đăng nhập (JWT & OTP), quản lý thông tin người dùng (upload avatar qua MinIO), tạo/thanh toán đơn hàng, tích điểm, và theo dõi đơn hàng. Chịu trách nhiệm triển khai các API RESTful, áp dụng clean code, ACID, Idempotency, audit logging (MongoDB), quản lý secrets (Vault), và đóng gói Docker. Thực hiện tối ưu hóa truy vấn SQL và viết Unit Test (>80% coverage) cho module tích điểm.", // Điều chỉnh mô tả
     skills: [
       "Java",
-      "MySQL",
-      "Hibernate",
-      "Selenium",
-      "Jenkins",
-      "JIRA",
-      "Automation Testing",
+      "Spring Boot 3",
+      "Spring Security (JWT)",
+      "Spring Data JPA",
+      "PostgreSQL",
+      "Docker",
+      "MinIO",
+      "SMTP",
+      "MongoDB",
+      "Vault",
+      "REST API",
+      "Kafka",
+      "Redis",
+      "Unit Testing", // JUnit (suy luận)
+      "SQL Optimization",
+      "Design Patterns (Factory, Singleton)",
+      "Jira", // Quản lý dự án
     ],
   },
 ];

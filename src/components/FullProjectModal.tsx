@@ -7,29 +7,34 @@ import {
   Modal,
   ScrollArea,
   Text,
+  useMatches,
 } from "@mantine/core";
 
 const FullProjectModal = (props: any) => {
+  const download = useMatches({ xs: "xs", md: "sm", lg: "md", bs: "lg" });
+  const techno = useMatches({ xs: "md", sm: "md", md: "lg", bs: "xl" });
+  const btn = useMatches({ xs: "xs", sm: "sm", md: "md", lg: "lg" });
   return (
     <Modal.Root
       scrollAreaComponent={ScrollArea.Autosize}
-      className="font-mono"
-      size="70%"
+      size="auto"
+      centered
+      className=" font-mono"
       opened={props.opened}
       onClose={props.close}
     >
-      <Modal.Overlay />
+      <Modal.Overlay className="!backdrop-opacity-85 blur-sm" />
       <Modal.Content className="!rounded-3xl">
-        <Modal.Header className="!bg-bgColor !border-primaryColor !border-b-0 !border-2 !rounded-tl-3xl !rounded-tr-3xl">
+        <Modal.Header className="!bg-bgColor xs-mx:!p-2  !border-primaryColor  !border-2 !border-b-0 !rounded-tl-3xl !rounded-tr-3xl">
           <Modal.Title
             data-autofocus
-            className="!text-4xl text-white flex gap-3 items-center !font-bold"
+            className="!text-4xl sm-mx:!text-3xl xs-mx:!text-2xl xsm-mx:!text-xl text-white flex gap-3 xs-mx:gap-1 items-center !font-bold"
           >
             {props.title}
             {props.live === true && (
               <Badge
                 className="flex items-center gap-1"
-                size="lg"
+                size={download}
                 variant="outline"
                 color="red"
                 rightSection={
@@ -51,43 +56,48 @@ const FullProjectModal = (props: any) => {
             className="!bg-bgColor !text-red-500"
           />
         </Modal.Header>
-        <Modal.Body className="!bg-bgColor !pt-2 !border-primaryColor !border-t-0 !border-2 !rounded-bl-3xl !rounded-br-3xl">
+        <Modal.Body className="!bg-bgColor xs-mx:!p-2 !pt-2 !border-primaryColor  !border-2 !border-t-0 !rounded-bl-3xl !rounded-br-3xl">
           <Image
-            className="!rounded-xl mt-3 !shadow-[0_0_5px_0_#64FFDA]"
+            className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA]"
             src={props.image}
             alt={props.image}
           />
-          <Group mt="md" mb="md">
+          <div className="flex flex-wrap gap-3 xs-mx:gap-2 my-3">
             {props.technologies.map((tech: string, index: number) => (
-              <Badge key={index} size="xl" variant="light" color="#64FFDA">
+              <Badge key={index} size={techno} variant="light" color="#64FFDA">
                 {tech}
               </Badge>
             ))}
-          </Group>
-          <Text className="!text-justify" size="lg" c="dimmed">
+          </div>
+          <Text
+            className="!text-justify !text-lg sm-mx:!text-base xs-mx:!text-xs"
+            c="dimmed"
+          >
             {props.desc}
           </Text>
-          <Group justify="space-between" mt="md" mb="md">
-            <a href={props.github} target="_blank" className="!w-[48%]">
+          <Group justify="space-between" mt="md" mb={3}>
+            <a
+              href={props.github}
+              target="_blank"
+              className="!w-[48%] sm-mx:!w-[46%]"
+            >
               <Button
-                size="lg"
                 variant="outline"
+                size={btn}
                 color="#64FFDA"
                 fullWidth
-                mt="md"
                 radius="md"
               >
                 View Code
               </Button>
             </a>
-            <a href={props.link} target="_blank" className="!w-[48%]">
+            <a href={props.link} target="_blank" className="!w-[48%] ">
               <Button
-                size="lg"
+                size={btn}
                 color="#64FFDA"
-                fullWidth
-                mt="md"
-                radius="md"
                 className="!text-bgColor"
+                fullWidth
+                radius="md"
               >
                 View Live App
               </Button>
@@ -98,5 +108,4 @@ const FullProjectModal = (props: any) => {
     </Modal.Root>
   );
 };
-
 export default FullProjectModal;
