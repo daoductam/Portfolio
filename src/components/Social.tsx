@@ -36,7 +36,7 @@ const Social = () => {
     );
   });
   return (
-    <div className="flex md-mx:hidden text-textColor items-center gap-10 fixed bottom-32 -left-44 rotate-90 ">
+    <div className="flex md-mx:hidden text-white items-center gap-10 fixed bottom-32 -left-44 rotate-90 ">
       {socialIcons}
       <hr className="border-[2px] w-40 rounded-full bg-textColor border-textColor" />
     </div>

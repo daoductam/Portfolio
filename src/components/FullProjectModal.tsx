@@ -70,7 +70,7 @@ const FullProjectModal = (props: any) => {
             ))}
           </div>
           <Text
-            className="!text-justify !text-lg sm-mx:!text-base xs-mx:!text-xs"
+            className="!text-slate-200 !text-justify !text-lg sm-mx:!text-base xs-mx:!text-xs"
             c="dimmed"
           >
             {props.desc}

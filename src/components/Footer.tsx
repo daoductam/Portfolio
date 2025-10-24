@@ -18,10 +18,10 @@ const Footer = () => {
       <div className="text-3xl md-mx:text-2xl text-primaryColor font-semibold">
         {Info.name}
       </div>
-      <div className="md-mx:flex hidden text-textColor gap-8 sm-mx:gap-6">
+      <div className="md-mx:flex hidden text-slate-200 gap-8 sm-mx:gap-6">
         {socialIcons}
       </div>
-      <div className="text-textColor text-xl md-mx:text-lg sm-mx:text-base xs-mx:text-sm xs-mx:flex flex-col items-center">
+      <div className="text-slate-200 text-xl md-mx:text-lg sm-mx:text-base xs-mx:text-sm xs-mx:flex flex-col items-center">
         Copyright &copy; {new Date().getFullYear()} {Info.name}{" "}
         <span className="xs-mx:hidden">|</span> <span>All Rights Reserved</span>
       </div>

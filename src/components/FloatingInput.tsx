@@ -29,7 +29,7 @@ const FloatingInput = (props: any) => {
         )}
         <label
           htmlFor={props.id}
-          className={`absolute  text-xl sm-mx:text-lg xs-mx:text-base  text-textColor  duration-300 transform -translate-y-4 scale-100 top-1 z-10 origin-[0] bg-bgColor  px-2 peer-focus:px-2 peer-focus:text-primaryColor  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 ${
+          className={`absolute  text-xl sm-mx:text-lg xs-mx:text-base  text-slate-200  duration-300 transform -translate-y-4 scale-100 top-1 z-10 origin-[0] bg-bgColor  px-2 peer-focus:px-2 peer-focus:text-primaryColor  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 ${
             props.id != "message"
               ? "peer-placeholder-shown:top-1/2"
               : "peer-placeholder-shown:top-6"

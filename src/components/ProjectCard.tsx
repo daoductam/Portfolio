@@ -78,7 +78,7 @@ const ProjectCard = (props: any) => {
           )}
         </Group>
         <Text
-          className="!text-justify !text-sm xs-mx:!text-xs"
+          className="!text-slate-200 !text-justify !text-sm xs-mx:!text-xs"
           lineClamp={5}
           size="sm"
           c="dimmed"

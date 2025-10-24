@@ -110,7 +110,7 @@ const About = () => {
             </span>
           </div>
           <div
-            className="text-textColor text-xl w-[90%] font-semibold text-justify 
+            className="text-slate-300 text-xl w-[90%] font-semibold text-justify 
           my-8 lg-mx:my-0 lg-mx:text-base sm-mx:text-sm xs-mx:text-xs"
           >
             {Info.bio}

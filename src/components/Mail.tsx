@@ -1,6 +1,6 @@
 const Mail = () => {
   return (
-    <div className="flex md-mx:hidden text-textColor items-center gap-10 fixed bottom-40 -right-44 rotate-90 ">
+    <div className="flex md-mx:hidden text-slate-200 items-center gap-10 fixed bottom-40 -right-44 rotate-90 ">
       <a
         href="mailto:tamdao1742005@gmail.com"
         data-aos="fade-down-right"

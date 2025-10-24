@@ -32,16 +32,16 @@ const TimelineItem = (items: any) => {
             <div className="text-white text-2xl font-semibold sm-mx:text-xl xs-mx:text-lg xsm-mx:text-base">
               {item.role}
             </div>
-            <div className="text-lg font-semibold text-textColor md-mx:text-base sm-mx:text-sm xs-mx:text-xs">
+            <div className="text-lg font-semibold text-slate-200 md-mx:text-base sm-mx:text-sm xs-mx:text-xs">
               {item.company} &#x2022; {item.date}
             </div>
           </div>
         </div>
-        <div className="text-textColor leading-6 text-justify md-mx:text-sm xs-mx:text-xs ">
+        <div className="text-slate-200 leading-6 text-justify md-mx:text-sm xs-mx:text-xs ">
           {item.desc}
         </div>
 
-        <div className="text-lg font-medium text-textColor md-mx:text-base sm-mx:text-sm xs-mx:text-xs flex gap-1">
+        <div className="text-lg font-medium text-slate-200 md-mx:text-base sm-mx:text-sm xs-mx:text-xs flex gap-1">
           <div className="font-semibold text-white">Skills:</div>
           <div className="flex gap-1 flex-wrap">
             {item.skills.map((skill: any, index: number) => (
