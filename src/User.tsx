@@ -18,7 +18,7 @@ const ProjectInfo = [
   {
     title: "Hệ thống Quản lý Bệnh viện (HMS - Microservices)",
     desc: "Xây dựng hệ thống quản lý bệnh viện đa người dùng (Admin, Bác sĩ, Bệnh nhân) theo kiến trúc microservices. Backend bao gồm các service riêng biệt cho User, Profile, Appointment, Pharmacy, Media, được quản lý bởi Eureka Server và API Gateway. Frontend React cung cấp giao diện dashboard và chức năng tương ứng cho từng vai trò.",
-    image: "/image/MS.png", // Thay bằng đường dẫn ảnh của bạn
+    image: "image/MS.png", // Thay bằng đường dẫn ảnh của bạn
     live: "", // Thêm link demo (nếu có)
     technologies: [
       "Java",
@@ -42,7 +42,7 @@ const ProjectInfo = [
   {
     title: "Ứng dụng Chat Real-time",
     desc: "Xây dựng ứng dụng chat full-stack (Java Spring Boot + React) hỗ trợ chat chung (public) và chat riêng tư (1-1) qua WebSocket. Tích hợp xác thực JWT, quản lý trạng thái online của người dùng và lưu trữ lịch sử tin nhắn.tend)",
-    image: "/image/chat.png", // Thay bằng đường dẫn ảnh của bạn
+    image: "image/chat.png", // Thay bằng đường dẫn ảnh của bạn
     live: "",
     technologies: [
       "Java",
@@ -67,7 +67,7 @@ const ProjectInfo = [
   {
     title: "Hệ thống Bán vé Tàu hỏa (Desktop App)",
     desc: "Ứng dụng desktop (Java Swing) quản lý hệ thống bán vé tàu Metro. Cho phép quản lý người dùng, hành khách, vé tàu, tuyến đường (lines) và nhà ga (stations). Kết nối cơ sở dữ liệu MySQL bằng JDBC.",
-    image: "/image/ticket-train.png", // Thay bằng đường dẫn ảnh của bạn
+    image: "image/ticket-train.png", // Thay bằng đường dẫn ảnh của bạn
     live: "", // Để trống vì là ứng dụng desktop
     technologies: [
       "Java",

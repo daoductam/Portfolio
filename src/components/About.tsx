@@ -127,7 +127,7 @@ const About = () => {
             </Button>
             <Button
               component="a"
-              href="/cv.pdf"
+              href="cv.pdf"
               download={Info.name}
               className="focus-visible:!outline-none !text-primaryColor !w-fit"
               size={btn}
@@ -146,7 +146,7 @@ const About = () => {
           <NeonGradientCard className="w-[325px] h-[325px] lg-mx:w-64 lg-mx:h-64 xsm-mx:w-56 xsm-mx:h-56  items-center justify-center text-center">
             <img
               className="w-full h-full rounded-full"
-              src="/profile.png"
+              src="profile.png"
               alt="profile"
             />
           </NeonGradientCard>

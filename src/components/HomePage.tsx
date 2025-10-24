@@ -16,7 +16,7 @@ const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
   }, []);
   return (
     <div
@@ -29,9 +29,9 @@ const HomePage = () => {
           <Toaster />
           <Header />
           <About />
+          <Experience />
           <Projects />
           <Skills />
-          <Experience />
           <Contact />
           <Footer />
           <Mail />

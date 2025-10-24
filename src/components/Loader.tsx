@@ -4,7 +4,7 @@ import IconCloud from "./magicui/icon-cloud";
 
 export function Loader() {
   return (
-    <div className="relative flex h-full w-full animate-[ping_1.5s_ease-in-out_1_4.5s] items-center justify-center">
+    <div className="relative flex h-full w-full animate-[ping_1.5s_ease-in-out_1_2s] items-center justify-center">
       <IconCloud iconSlugs={Slugs} />
       <IconHexagon
         className="absolute -z-10 animate-[spin_5s_linear_infinite]"
